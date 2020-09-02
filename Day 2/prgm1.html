@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to search for a particular charater in a string.</title>
+</head>
+<body>
+    <div>
+      <label>Name:</label><br/><br/>
+       <input type='text' id='name' placeholder="Enter  Name"><br/><br/>
+      <label>Charater:</label>  <br/><br/>
+       <input type='text' id='charater' placeholder="Enter any charater to search "><br/><br/>
+      <button type='submit' name='submit' onclick="search()">Click</button> <br/><br/>
+      <p id='output'>Result:</p>
+    </div>
+    <script>
+       function search(){
+          var s = document.getElementById('name').value;
+          var c = document.getElementById('charater').value;
+          var r = s.search(c);
+          document.getElementById('output').innerHTML = r;
+       }
+    </script>
+</body>
+</html>

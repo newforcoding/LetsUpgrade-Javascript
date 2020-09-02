@@ -1,0 +1,35 @@
+
+<!-- var arr = ["Javascript","Node","Express","React"] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to search element in a array of string.
+    </title>
+</head>
+<body>
+    <div>
+            <label>Search a Langauages with names:</label>
+            <br/><br/>
+            <input type="text" id="search">
+            <br/>
+            <br/>
+            <button onclick="Search()">click</button>
+            <p id="name"></p>
+        </div>
+        <script>
+            function Search(){
+                let arr = ["Javascript","Node","Express","React"]
+                var arr1 = document.getElementById("search").value
+                var print = arr.includes(arr1)
+                if(print)
+                   document.getElementById("name").innerHTML = arr1 + " is a array element.";
+                else
+                   document.getElementById("name").innerHTML = arr1 + " is not a array element."; 
+            }
+        </script>
+
+</body>
+</html>

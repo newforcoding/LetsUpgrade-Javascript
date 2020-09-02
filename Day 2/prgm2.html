@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program to convert mintues to secondes</title>
+</head>
+<body>
+    <div>
+      <label>Enter a number (mintues)</label>
+      <input type='number' id='num'/>
+      <button onclick="convertion()">Click</button>
+     <p id='input'></p>
+    </div>
+        <script>
+         function convertion(){
+          var sec=document.getElementById('num').value;
+          var s=Math.floor(sec * 60);
+          document.getElementById('input').innerHTML=s;
+        }
+        </script>
+</body>
+</html>
