@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Project</title>
+    <style>
+        *{
+           margin:0px;
+        }
+        .container{ 
+         background-color: lightgray;
+         width:800px;
+         height:400px;
+         margin-left:16%;
+         margin-top: 40px;
+         padding: 50px;
+         font-family:inherit;
+         text-align: center;
+         border-radius: 4px;
+        }
+        .table{
+            width: 100%;
+            margin-top: 10px;
+        }
+        th{
+            margin:10px;
+            font-family: monospace;
+            background-color: lightblue;
+            font-size: 20px;
+        }
+        td{
+            margin-top: 5px;
+            height: 40px;
+            text-align: center;
+            color:olive;
+            font-family: sans-serif;
+           
+        }
+        .searchbox{
+               margin-top: 20px;
+        }
+        input{
+             height: 40px;
+             text-indent:10px;
+             border: 6px;
+             border-radius: 8px;
+             font-family: sans-serif;  
+             background-color:honeydew
+        }
+        button{
+            border-radius: 5px;
+            border-color: lightgreen;
+            padding: 6px;
+            margin:4px;
+            font-family: sans-serif;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+         <h1>EMPOLYEE TABLE</h1>
+         <div class="searchbox">
+             <input type="text" id='city' placeholder="Search cities" onkeyup="searchcities()"/>
+             <input type="text" id='name' placeholder="Search names" onkeyup="searchnames()"/>
+             </div>
+         <table border="2" class="table" cellspacing='0'>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Salary</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+                    
+            </tbody>    
+          </table>
+    </div>
+    <script src='project1.js'></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Project</title>
+</head>
+<style>
+    .container{
+        background-color: navy;
+        color: oldlace;
+        text-align: center;
+        width: 800px;
+        height: 600px;
+        padding: 5px;
+        margin-top: 5%;
+        margin-left: 20%;
+        border-radius: 10px;
+        font-family:cursive;
+    }
+    input{
+        height: 30px;
+        text-indent: 25%;
+        border-radius: 7px;
+        padding: 5px;
+        font-style: oblique;
+        border-style:dotted;
+    }
+    button{
+        padding: 10px;
+        border-radius:5px;
+        background-color: navajowhite;
+        font-style: oblique;
+        font-family: cursive;
+    }
+    .form{
+        margin-top: 10px;
+        
+    }
+    .tbl{
+        width: 100%;
+        margin-top: 20px;
+    }
+    th,td{
+        text-align: center;
+        height: 40px;
+        padding: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+      <h1>Bus Reservation</h1>
+        <div class="form">
+            <form onsubmit="AddBusInfor(event)">
+                <input type='text' placeholder="Enter Name" id='addname'/>
+                <input type='text' placeholder="Enter Source" id='addsrc'/>
+                <input type='text' placeholder="Enter Destination" id='adddes'/>
+                <input type='number' placeholder="Enter Number" id='addnum'/><br/><br/>
+                <input type='number' placeholder="Enter Capacity" id='addcapacity'/>
+                <button type="submit">Add Details</button>    
+            </form>
+        </div>
+        <div class="form">
+           <input type="text" placeholder="Search Soruce" id='srcData' onkeyup="searchSrc()">
+           <input type="text" placeholder="Search Destination" id='desData' onkeyup="searchDes()">
+        </div>
+      
+        <table border="1" cellspacing='1' class="tbl"> 
+          <thead>
+              <tr>
+                  <th>Sno</th>
+                  <th>Name</th>
+                  <th>Source</th>
+                  <th>Destination</th>
+                  <th>Contact Number</th>
+                  <th>Passenger Capacity</th>
+              </tr>
+         </thead>
+         <tbody class="tdata">
+         </tbody>
+        </table>
+    </div>
+    <script src='project2.js'></script>
+</body>
+</html>
