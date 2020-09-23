@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping .</title>
+    <style>
+        *{
+         margin: 0px;
+         padding:0px   
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            background-color: cadetblue;
+            line-height: 70px;
+        }
+        h2{
+            margin-left: 50px;
+            display: inline-block;
+            width: 30%;
+            vertical-align: top;
+        }
+        .search{
+            height: 70px;
+            width: 60%;
+            /* background-color: crimson; */
+            display: inline-block;
+        }
+        .search input{
+              height: 40px;
+              width: 25%;
+              text-indent: 20px;
+              border-radius: 5px;
+              border: 1px solid grey;
+              outline: none;
+        }
+        .products{
+            width: 100%;
+            height: auto;
+            /* background-color: grey; */
+        }
+        .product{
+            height: auto;
+            width: 22%;
+            /* background-color: indianred; */
+            display: inline-block;
+            margin-top: 25px;
+            margin-left: 6.3%;
+            border: 1px solid grey;
+
+        }
+        .produtwrapper{
+            height: auto;
+            width: 80%;
+            /* background-color: khaki; */
+            margin-left: 10%;
+            margin-bottom:35px ;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 5px;
+        }
+        .prodimg{
+            height: 300px;
+            width: 100%;
+            /* background-color: lawngreen; */
+            overflow: hidden;
+        }
+        .product h3,.product p{
+           padding-top: 5px;
+           text-align: center;
+           margin-bottom: 4px;
+        }
+        .product p{
+            color:olive
+        }
+        button{
+            padding: 10px;
+            border-radius:1cm;
+            background-color: skyblue;
+            color:yellow;
+            font-style: oblique;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h1,h3,p{
+            font-family:sans-serif;
+            margin: 10px;
+        }
+
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+       <h2>Shopping Dot</h2>
+       <div class="search" >
+         <input type='text' onkeyup="searchProduct(this.value)" placeholder="Search Here!">
+        <input type='text' onkeyup="searchProductMin()" id='min' placeholder="Minimum Price">
+        <input type='text' onkeyup="searchProductMax()" id='max' placeholder="Maximum Price">
+       
+       </div>
+       </div>
+      <div class="products">
+        <div class="produtwrapper" id="productwrapper">
+      </div>
+      <div class="products">
+        <h1>Cart:</h1>
+        <div class="productwrapper" id="cart"></div>
+
+       
+   <script src='project2.js'></script> 
+</body>
+</html>
